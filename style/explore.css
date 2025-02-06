@@ -1,0 +1,61 @@
+.explore-section {
+    width: 90%;
+    margin: 10px auto 0;
+    padding-left: 125px;
+    padding-right: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.explore-section .detail-section {
+    padding-top: 30px;
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.explore-section .detail-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.explore-section .detail-section p {
+    font-size: 1rem;
+    padding-right: 20px;
+    color: var(--gray);
+}
+
+.explore-section .explore-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border: 2px solid var(--primary);
+    border-radius: 50px;
+    padding: 7px 16px;
+    gap: 7px;
+}
+
+.explore-section .explore-button:focus {
+
+}
+
+.explore-section .explore-button span {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--primary);
+}
+
+.explore-section .explore-button svg {
+    color: var(--primary);
+    stroke: var(--primary);
+    height: 20px;
+}
+
+.explore-section .place-section {
+    flex-grow: 1;
+    height: auto;
+    background-color: var(--primary);
+}

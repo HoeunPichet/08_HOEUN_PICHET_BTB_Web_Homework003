@@ -1,0 +1,89 @@
+/* Header Section */
+header {
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+header .logo, header .contact {
+    flex-basis: 150px;
+}
+
+header .logo p {
+    font-size: 1.35rem;
+    font-weight: 900;
+}
+
+header .contact {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style-type: none;
+    margin: 0 12px;
+}
+
+header nav ul li:hover a {
+    text-decoration: underline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    padding: 0 2px;
+    font-weight: 500;
+    color: var(--text);
+}
+
+header nav ul li a:visited {
+    color: var(--primary);
+}
+
+header nav ul li a:active {
+    color: var(--active);
+}
+
+header nav ul li a, header nav ul li p {
+    font-size: 1rem;
+    color: var(--text);
+}
+
+header .contact [type=button] {
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 7px 16px;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: all .3s linear;
+    cursor: pointer;
+    color: var(--text);
+}
+
+header .contact [type=button]:hover {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+header .contact [type=button]:focus {
+    border: 2px solid var(--primary);
+}
