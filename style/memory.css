@@ -1,0 +1,116 @@
+.memory-container {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 40px;
+    min-height: 200px;
+}
+
+.memory-container .title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.memory-container .title h1 {
+    font-size: 2rem;
+    color: var(--text);
+}
+
+.memory-container .title p {
+    font-size: 1rem;
+    color: var(--gray);
+}
+
+.memory-section {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.memory-section .step-section {
+    display: flex;
+    gap: 40px;
+    flex-direction: column-reverse;
+    flex-basis: 50%;
+    justify-content: center;
+}
+
+.memory-section .group-step {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.memory-section .group-step h3 {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    background-color: var(--primary);
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.memory-section .group-step h4 {
+    color: var(--text);
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.memory-section .group-step p {
+    color: var(--gray);
+    font-size: 1rem;
+}
+
+.memory-section figure {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.memory-section figure .group-chat {
+    position: relative;
+}
+
+.memory-section figure .group-chat img {
+    height: 550px;
+    border-radius: 15px;
+}
+
+.memory-section figure .chatting {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #ffffffc9;
+    position: absolute;
+    border-radius: 15px;
+    padding: 5px 12px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.memory-section figure .chatting.first {
+    top: 40px;
+    left: -40px;
+}
+
+.memory-section figure .chatting.second {
+    bottom: 100px;
+    left: -40px;
+}
+
+.memory-section figure .chatting.third {
+    top: 35%;
+    right: -60px;
+}
+
+.memory-section figure .chatting img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.memory-section figure .chatting p {
+    font-size: 1rem;
+    color: var(--text);
+}

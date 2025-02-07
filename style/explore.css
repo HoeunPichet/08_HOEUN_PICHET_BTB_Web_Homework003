@@ -36,10 +36,8 @@
     border-radius: 50px;
     padding: 7px 16px;
     gap: 7px;
-}
-
-.explore-section .explore-button:focus {
-
+    transition: all 0.3s linear;
+    cursor: pointer;
 }
 
 .explore-section .explore-button span {
@@ -54,8 +52,58 @@
     height: 20px;
 }
 
+.explore-section .explore-button:hover {
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.explore-section .explore-button:focus {
+    background-color: var(--secondary);
+    border: 2px solid var(--secondary);
+}
+
+.explore-section .explore-button:focus span, .explore-section .explore-button:hover span {
+    color: #fff;
+}
+
+.explore-section .explore-button:focus svg, .explore-section .explore-button:hover svg {
+    color: #fff;
+    stroke: #fff;
+}
+
 .explore-section .place-section {
     flex-grow: 1;
     height: auto;
-    background-color: var(--primary);
+    display: flex;
+    gap: 20px
+}
+
+.explore-section .place-section .image-border {
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    flex-basis: 33.33%;
+    height: 300px;
+    padding: 15px;
+    transition: all 0.3s linear;
+}
+
+.explore-section .place-section .image-border:hover {
+    transform: scale(105%);
+}
+
+.explore-section .place-section img {
+    object-fit: cover;
+    flex-shrink: 0;
+    min-width: 170px;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.explore-section .place-section .image-border:nth-child(2) {
+    margin-top: 80px;
+}
+
+.explore-section .place-section .image-border:nth-child(3) {
+    margin-top: 20px;
 }

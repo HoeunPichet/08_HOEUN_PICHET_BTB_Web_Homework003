@@ -2,12 +2,15 @@
 @import url("./header.css");
 @import url("./banner.css");
 @import url("./explore.css");
+@import url("./memory.css");
+@import url("./footer.css");
 
 :root {
     --text: #212121;
     --gray: #3a3a3a;
-    --primary: #493D9E;
-    --active: #ff2d2d;
+    --primary: #493D9E; 
+    --secondary: #FBA518;
+    --active: #939100;
 }
 
 * {
@@ -19,6 +22,12 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+main {
+    min-width: 1400px;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 .go-top {

@@ -20,6 +20,7 @@ header .logo, header .contact {
 header .logo p {
     font-size: 1.35rem;
     font-weight: 900;
+    color: var(--text);
 }
 
 header .contact {
@@ -70,13 +71,14 @@ header .contact [type=button] {
     font-weight: 500;
     font-size: 1rem;
     padding: 7px 16px;
-    border: 2px solid transparent;
+    border: none;
     border-radius: 50px;
     background-color: #fff;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     transition: all .3s linear;
     cursor: pointer;
     color: var(--text);
+
 }
 
 header .contact [type=button]:hover {
@@ -85,5 +87,5 @@ header .contact [type=button]:hover {
 }
 
 header .contact [type=button]:focus {
-    border: 2px solid var(--primary);
+    outline: 2px solid var(--primary);
 }
