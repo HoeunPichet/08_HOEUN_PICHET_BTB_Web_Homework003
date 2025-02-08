@@ -33,6 +33,7 @@
     justify-content: center;
     width: fit-content;
     border: 2px solid var(--primary);
+    outline: 2px solid transparent;
     border-radius: 50px;
     padding: 7px 16px;
     gap: 7px;
@@ -54,12 +55,13 @@
 
 .explore-section .explore-button:hover {
     background-color: var(--primary);
-    border: 2px solid var(--primary);
+    border-color: var(--primary);
 }
 
 .explore-section .explore-button:focus {
     background-color: var(--secondary);
-    border: 2px solid var(--secondary);
+    border-color: var(--secondary);
+    outline-color: var(--secondary);
 }
 
 .explore-section .explore-button:focus span, .explore-section .explore-button:hover span {
